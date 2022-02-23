@@ -124,3 +124,60 @@ print('PA finalizada com {} termos'.format(total))
 print('-='*10,end='Próximo exercicio')
 print('-='*10)
 print('\n')
+
+
+
+#Exercicio 63
+i=0
+p=1
+cont=3
+termos=int(input('Quantos termos você quer mostrar? '))
+print('{}->{}'.format(i,p), end='')
+while cont<=termos:
+    cont+=1
+    g = i + p
+    print('->{}'.format(g), end='')
+    i=p
+    p=g
+print('-> FIM')
+print('-='*10,end='Próximo exercicio')
+print('-='*10)
+print('\n')
+
+
+#Exercicio 64
+numero=int(input('Digite seu numero até acertar: '))
+c = 1
+s=0
+while numero != 999:
+    s+=numero
+    numero = int(input('Digite seu numero até acertar: '))
+    c+=1
+
+print('{} e {}'.format(c,s))
+print('-='*10,end='Próximo exercicio')
+print('-='*10)
+print('\n')
+
+
+
+#Exercicio 65
+numero=int(input('Digite seu numero até acertar: '))
+quer=str(input('Quer continuar[S/N]: ')).upper()
+soma = 0
+quant = 1
+max=min = numero
+while quer == 'S':
+
+    quant +=1
+    soma+=numero
+    numero = int(input('Digite seu numero até acertar: '))
+    quer = str(input('Quer continuar[S/N]: ')).upper()
+    if numero>=max:
+        max=numero
+    elif numero<min:
+        min=numero
+print('{},{},{}'.format(max,min,soma/quant))
+print('-='*10,end='Próximo exercicio')
+print('-='*10)
+print('\n')

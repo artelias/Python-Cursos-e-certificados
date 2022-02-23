@@ -7,6 +7,7 @@ print('\n')
 
 
 #Exercicio 17
+from gettext import install
 import math
 CatetoOposto = float(input('Valor do cateto oposto: '))
 CatetoAdjacente = float(input('Valor do cateto adjacente: '))
@@ -58,10 +59,10 @@ print('\n')
 
 
 #Exercicio 21
-import pygame
-pygame.init()
-pygame.mixer.music.load('AC_DC - Highway to Hell')
-pygame.mixer.music.play()
-pygame.event.wait()
-input()
+#import pygame 
+#pygame.init()
+#pygame.mixer.music.load('AC_DC - Highway to Hell')
+#pygame.mixer.music.play()
+#pygame.event.wait()
+#input()
 print('-='*20)

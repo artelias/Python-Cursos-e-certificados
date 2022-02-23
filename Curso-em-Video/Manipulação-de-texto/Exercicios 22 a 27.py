@@ -13,9 +13,9 @@ print('\n')
 #Exercicio 23
 numero=int(input('Escolha um numero de 0 a 9999: '))
 numeros=str(numero)
-print('Unidade {}'.format(numeros[3]))
-print('Dezena {}'.format(numeros[2]))
-print('Centena {}'.format(numeros[1]))
+print('Unidade {}'.format(numeros[3:4]))
+print('Dezena {}'.format(numeros[2:3]))
+print('Centena {}'.format(numeros[1:2]))
 print('Milhar {}'.format(numeros[0]))
 
 #OU DA FORMA MATEMATICA
